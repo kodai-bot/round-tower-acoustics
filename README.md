@@ -12,6 +12,11 @@ the boundary element method (BEM), using [bempp-cl](https://bempp.com) and
 [gmsh](https://gmsh.info). The interior is solved first (how the voice drives each window), then
 the exterior (how sound radiates from the windows out to the ground).
 
+![Phase 2 BEM meshes](phase2_clondalkin/v2_mesh_preview.png)
+
+*The phase 2 meshes. Left: the outside of the bell storey, with the wall drawn translucent so the
+four window ducts show. Right: the interior chamber, cut away.*
+
 **Status: research model, two phases complete.** The numbers come with reliability flags, and
 the flags matter; see [Reliability](#reliability).
 
@@ -68,6 +73,11 @@ frequency-domain result was recomputed. The rebuild specification is in
 Phase 1's frequency-domain numbers are superseded. Its method, review history and figures are kept
 as the record of how the model got here.
 
+<img src="phase1_generic_tower/tower_mesh_preview.png" width="420" alt="Phase 1 mesh">
+
+*The phase 1 mesh, for comparison: a 2.2 m radius, a thin shell with no wall thickness, and windows
+as flush patches.*
+
 ## Site context
 
 The listening positions come from real monastic sites: tower-to-church distances of 15–30 m at
@@ -87,6 +97,7 @@ cd phase2_clondalkin
 python v2_check_watertight.py v2_mesh_interior_A.msh   # seconds
 python v2_validate_interior_modes.py                   # interior mode check, about 20 min
 python v2_plot_headline_curve.py                       # replot from saved results
+python v2_plot_mesh.py                                 # render the meshes
 ```
 
 Plots and summaries rebuild from the saved CSVs in seconds. **The full exterior sweep
