@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Reference papers (third-party copyright) and draft essays: kept locally only
+*.pdf
+*.odt
+
+# QGIS project points at GIS data folders on the author's machine
+QGIS_Projects/
+
+# Blender autosave backups; ParaView state pointing at files from an older machine
+*.blend1
+*.pvsm

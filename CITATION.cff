@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Round tower acoustics: a boundary element model of the bell storey of an Irish round tower"
+authors:
+  - family-names: Foley
+    given-names: Dylan
+repository-code: "https://github.com/kodai-bot/round-tower-acoustics"
+license: MIT
+date-released: 2026-11-04
+keywords: [archaeoacoustics, round towers, boundary element method, Ireland, early medieval]
